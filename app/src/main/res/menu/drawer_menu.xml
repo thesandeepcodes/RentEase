@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
+        <item
+            android:id="@+id/tabRooms"
+            android:icon="@drawable/ic_house"
+            android:title="Rooms" />
+        <item
+            android:id="@+id/tabCharges"
+            android:icon="@drawable/ic_outline_feed"
+            android:title="Charges" />
+        <item
+            android:id="@+id/tabMeters"
+            android:icon="@drawable/ic_outline_speed"
+            android:title="Meters" />
+    </group>
+    <group android:id="@+id/support">
+        <item
+            android:id="@+id/tabShare"
+            android:icon="@drawable/ic_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/tabRate"
+            android:icon="@drawable/ic_outline_rate_review"
+            android:title="Rate Us" />
+    </group>
+
+    <group android:id="@+id/logoutGrp">
+        <item
+            android:id="@+id/tabLogout"
+            android:checkable="false"
+            android:enabled="false"
+            app:actionLayout="@layout/nav_footer"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+</menu>

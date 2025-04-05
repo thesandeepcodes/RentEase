@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="bg">#FF121212</color> <!-- Dark background -->
+    <color name="black">#FFFFFFFF</color> <!-- White for contrast -->
+    <color name="white">#FF121212</color> <!-- Darkest gray for white replacement -->
+    <color name="primary">#BB86FC</color> <!-- Purple for dark mode accent -->
+
+    <!-- Grayscale Colors -->
+    <color name="gray_900">#FFE6E6E6</color> <!-- Lightest gray -->
+    <color name="gray_800">#FFCCCCCC</color>
+    <color name="gray_700">#FFB3B3B3</color>
+    <color name="gray_600">#FF999999</color>
+    <color name="gray_500">#FF808080</color>
+    <color name="gray_400">#FF666666</color>
+    <color name="gray_300">#FF4D4D4D</color>
+    <color name="gray_200">#FF333333</color>
+    <color name="gray_100">#212121</color>
+    <color name="gray_50">#181818</color> <!-- Darkest gray -->
+
+    <!-- Semantic Colors -->
+    <color name="colorDanger">#FF5252</color> <!-- Softer red -->
+    <color name="colorWarning">#FFA726</color> <!-- Warm amber -->
+    <color name="colorSuccess">#0B8510</color> <!-- Softer green -->
+    <color name="colorInfo">#29B6F6</color> <!-- Softer blue -->
+    <color name="colorSuccessBg">#880C3A10</color> <!-- Dark green background -->
+    <color name="colorWarningBg">#A6422901</color> <!-- Dark amber background -->
+    <color name="colorWarningBgLight">#7B422901</color> <!-- Even darker amber -->
+    <color name="colorDangerBg">#4B0000</color> <!-- Dark red background -->
+
+    <color name="floatingButton">#222222</color>
+
+    <!-- Tenant Page -->
+    <color name="tenant_header_bg">@color/bg</color>
+    <color name="tenant_header_title">@color/gray_800</color>
+    <color name="tenant_header_des">@color/gray_600</color>
+    <color name="tenant_header_button_text">@color/gray_400</color>
+    <color name="tenant_header_button_stroke">@color/gray_100</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="16dp">
+        <TextView
+            android:id="@+id/list_reading_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feb, 2025"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <ImageView
+                android:id="@+id/list_reading_edit"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:tint="@color/gray_700"
+                android:src="@drawable/ic_filled_edit"/>
+
+            <ImageView
+                android:id="@+id/list_reading_delete"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_filled_delete"
+                app:tint="@color/colorDanger"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+        <TextView
+            android:id="@+id/list_reading_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:text="245"
+            android:layout_marginTop="14dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/gray_100"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

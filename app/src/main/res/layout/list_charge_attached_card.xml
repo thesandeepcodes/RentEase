@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="4dp"
+        app:strokeColor="@color/gray_100"
+        android:backgroundTint="@color/bg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/list_charge_attached_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Room No 1"
+                android:textSize="13sp"
+                android:textColor="@color/gray_800"
+                android:paddingHorizontal="10dp"/>
+
+            <ImageView
+                android:id="@+id/list_charge_attached_remove"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/gray_600"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

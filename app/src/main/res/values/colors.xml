@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="bg">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#5C2C5D</color>
+
+    <!-- Grayscale Colors -->
+    <color name="gray_900">#FF1A1A1A</color>
+    <color name="gray_800">#FF333333</color>
+    <color name="gray_700">#FF4D4D4D</color>
+    <color name="gray_600">#FF666666</color>
+    <color name="gray_500">#FF808080</color>
+    <color name="gray_400">#FF999999</color>
+    <color name="gray_300">#FFB3B3B3</color>
+    <color name="gray_200">#FFCCCCCC</color>
+    <color name="gray_100">#FFE6E6E6</color>
+    <color name="gray_50">#FFF2F2F2</color>
+
+    <!-- Semantic Colors -->
+    <color name="colorDanger">#BB2124</color> <!-- Red shade -->
+    <color name="colorWarning">#ED9D2F</color> <!-- Amber shade -->
+    <color name="colorSuccess">#005d2c</color> <!-- Green shade -->
+    <color name="colorInfo">#5BC0DE</color>
+    <color name="colorSuccessBg">#e5f5e0</color>
+    <color name="colorWarningBg">#FDEDC8</color>
+    <color name="colorWarningBgLight">#FFF3E0</color>
+    <color name="colorDangerBg">#FFECEB</color>
+
+    <color name="floatingButton">#FFFFFF</color>
+
+    <!-- Tenant Page -->
+    <color name="tenant_header_bg">@color/primary</color>
+    <color name="tenant_header_title">@color/gray_50</color>
+    <color name="tenant_header_des">@color/gray_300</color>
+    <color name="tenant_header_button_text">@color/gray_100</color>
+    <color name="tenant_header_button_stroke">@color/gray_500</color>
+</resources>

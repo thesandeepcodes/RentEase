@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="0dp"
+    android:paddingVertical="15dp"
+    android:minWidth="200dp">
+
+    <TextView
+        android:id="@+id/meter_share_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room No 1"
+        android:textSize="18sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/gray_800"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the percentage of contribution for the billed unit for multiple rooms."
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/gray_600"/>
+
+    <TextView
+        android:id="@+id/meter_share_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share: 0"
+        android:textSize="16sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"/>
+
+    <SeekBar
+        android:id="@+id/meter_share_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="0"
+        android:progress="0"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+</LinearLayout>

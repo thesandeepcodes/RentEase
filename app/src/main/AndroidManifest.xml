@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentEase"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.Collect"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="in.qwicklabs.rentease.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.ViewBill"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ViewTenant"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MeterReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditRoom"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddRoom"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Meters"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Charges"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Rooms"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen.RentEase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

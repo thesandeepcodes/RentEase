@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RentEase</string>
+    <string name="web_client_id">43645631763-39v67gkecib384cgujbpq0dc0e7qh1eg.apps.googleusercontent.com</string>
+    <string name="login_hero_des">Join us by clicking the button below and start automating your property management with ease.</string>
+    <string name="welcome_to_app">Welcome to RentEase</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SplashScreen.RentEase" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#4A154B</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.RentEase</item>
+    </style>
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="NavigationDivider" parent="Theme.RentEase">
+        <item name="android:listDivider">@color/gray_100</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
