@@ -1,6 +1,7 @@
 package `in`.qwicklabs.rentease.utils
 
 import android.icu.util.Calendar
+import android.util.Log
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
@@ -21,6 +22,7 @@ class GenerateBill(private val bill: Bill) {
     var billAmount: Double = 0.0
     var billTotal: Double = 0.0
     var advanced: Double = 0.0
+    var discount: Double = 0.0
 
     private var meterCharge: Double = 0.0
     private var meterReading: Double = 0.0
@@ -40,6 +42,7 @@ class GenerateBill(private val bill: Bill) {
         }
 
         // apply discount
+        discount = bill.discount
         total -= bill.discount
 
         // add meter charges
@@ -101,7 +104,9 @@ class GenerateBill(private val bill: Bill) {
                 }
             }
 
-            return previousBillAmount
+            val nextAdvanced = bills.firstOrNull()?.nextAdvanced ?: 0.0
+
+            return previousBillAmount - nextAdvanced;
         }
 
         fun breakdown(bills: List<Bill>): MutableList<Map<String, Long>> {

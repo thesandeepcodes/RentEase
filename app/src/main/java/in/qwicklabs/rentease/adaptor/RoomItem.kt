@@ -70,7 +70,7 @@ class RoomItemAdaptor(
         holder.statusAvailable.visibility = View.GONE
         holder.statusOnLease.visibility = View.GONE
 
-        Constants.getDbRef().collection(Constants.TENANT_COLLECTION).whereEqualTo("roomId", currentItem.id).get().addOnSuccessListener {
+        Constants.getDbRef().collection(Constants.TENANT_COLLECTION).whereEqualTo("roomId", currentItem.id).whereEqualTo("active", true).get().addOnSuccessListener {
             if(it.documents.isEmpty()){
                 holder.statusAvailable.visibility = View.VISIBLE
             }else{

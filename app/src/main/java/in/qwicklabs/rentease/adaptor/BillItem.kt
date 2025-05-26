@@ -75,7 +75,7 @@ class BillItemAdaptor(
                 "₹" + Math.round(if (bill.paid) generatedBill.billAmount else generatedBill.total)
 
             binding.listBillProgress.progress =
-                ((bill.collected / generatedBill.billAmount) * 100).toInt()
+                ((bill.collected / (if(generatedBill.billAmount > generatedBill.discount) generatedBill.billAmount - generatedBill.discount else generatedBill.billAmount)) * 100).toInt()
 
 
             binding.listBillCard.setOnClickListener {

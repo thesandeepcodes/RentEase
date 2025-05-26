@@ -2,6 +2,7 @@ package `in`.qwicklabs.rentease.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -85,7 +86,7 @@ class Dashboard : Fragment() {
                             val bills = billSnapshots.documents.mapNotNull { it.toObject(Bill::class.java) }
                             val due = if (bills.isNotEmpty()) GenerateBill.dues(bills) else 0.0
 
-                            if (due > 0) {
+                            if (due.toLong() > 0) {
                                 activity?.runOnUiThread {
                                     if (!isAdded) return@runOnUiThread
 
